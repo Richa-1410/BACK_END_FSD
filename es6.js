@@ -14,3 +14,13 @@ const hellos = (a, b) => {
     return a + b;
 }
 console.log(hellos(25, 10));
+
+//23/07/26
+//synchronous function
+function hello1(){
+    console.log("task1");   
+
+}
+hello1();
+console.log("task2"); 
+//
