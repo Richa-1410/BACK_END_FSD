@@ -26,7 +26,7 @@ async function readFile() {
          console.log("\nFile Content:");
          console.log(data);
      } catch (error) {
-         console.log("Error:", error.message);
+         console.log("Error:", error.message)+;
      }
  }
 
