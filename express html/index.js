@@ -3,7 +3,7 @@ import fs from 'fs';
 const app = express();
 const PORT  = 3000;
 app.get('/', (req, res) => {
-    fs.readFile('index.html', 'utf8',(err, data) => {
+    fs.readFile('pages/index.html', 'utf8',(err, data) => {
         if (err) {
             res.status(500).send('Error occurred while reading the file.');
             return;
@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
     });
 });
 app.get('/about', (req, res) => {
-    fs.readFile('about.html', 'utf8',(err, data) => {
+    fs.readFile('pages/about.html', 'utf8',(err, data) => {
         if (err) {
             res.status(500).send('Error occurred while reading the file.');
             return;
@@ -23,7 +23,7 @@ app.get('/about', (req, res) => {
     });
 });
 app.get('/contact', (req, res) => {
-    fs.readFile('contact.html', 'utf8',(err, data) => {
+    fs.readFile('pages/contact.html', 'utf8',(err, data) => {
         if (err) {
             res.status(500).send('Error occurred while reading the file.');
             return;
